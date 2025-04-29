@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E2e_Scenarios">
+
+    <test name="E2e_UserFlow">
+        <classes>
+            <class name="Tests.E2E.E2e_Sc"></class>
+        </classes>
+    </test>
+</suite>
