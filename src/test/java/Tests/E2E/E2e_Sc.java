@@ -188,7 +188,7 @@ public class E2e_Sc {
     @Test
     public void E2eScenario_invalid_AddingProductFromProductPageDetails() throws FileNotFoundException {
         //TODO::LoginSteps
-        SoftAssert softAssert = new SoftAssert();
+
         new P01_LoginPage(getDriver())
                 .enterUserName(DataUtil.getJsonData("validLoginData", "username"))
                 .enterPassword(DataUtil.getJsonData("validLoginData", "password"))
@@ -199,14 +199,14 @@ public class E2e_Sc {
         String ProductNameForProductPage = home.clickOnProductNameForIndexOne().getNameForProductPage();
         LogsUtils.info("ProductName in ProductDetails : " + ProductNameForProductPage);
 
-        softAssert.assertEquals(ProductNameForProductPage, ProductNameForHome);
+        Assert.assertEquals(ProductNameForProductPage, ProductNameForHome);
 
         P07_ProductOfDetailsPage P_Details = new P07_ProductOfDetailsPage(getDriver());
         P_Details.clickOnAddToCartButton();
-        softAssert.assertEquals(P_Details.getNumberOfProductsOnCartIcon(), "1");
+        Assert.assertEquals(P_Details.getNumberOfProductsOnCartIcon(), "1");
 
         P_Details.clickOnBackButton();
-        softAssert.assertEquals(home.getNumberOfProductsOnCartIcon(), 1);
+        Assert.assertEquals(home.getNumberOfProductsOnCartIcon(), "1");
     }
 
     @Description("Verify that User can Continue Shopping After Add Products in the Cart")

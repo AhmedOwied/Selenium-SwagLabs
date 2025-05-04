@@ -1,0 +1,96 @@
+[INFO] 05-05-2025 00:53:27 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:53:31 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:53:31 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_Valid_RemoveProductFromCartSc Started  
+[INFO] 05-05-2025 00:53:33 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 3 
+[INFO] 05-05-2025 00:53:33 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 4 
+[INFO] 05-05-2025 00:53:33 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 2 
+[INFO] 05-05-2025 00:53:33 [main] [Tests.E2E.E2e_Sc.E2eScenario_Valid_RemoveProductFromCartSc(E2e_Sc.java:134)] - numberOfCartIconBeforeClickOnRemoveItem: 2 
+[INFO] 05-05-2025 00:53:34 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 1 
+[INFO] 05-05-2025 00:53:34 [main] [Tests.E2E.E2e_Sc.E2eScenario_Valid_RemoveProductFromCartSc(E2e_Sc.java:139)] - numberOfCartIconAfterClickOnRemoveItem: 1 
+[INFO] 05-05-2025 00:53:34 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :E2eScenario_Valid_RemoveProductFromCartSc Passed  
+[INFO] 05-05-2025 00:53:34 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:53:36 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:53:36 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_VerifyContinueShopping Started  
+[INFO] 05-05-2025 00:53:38 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 1 
+[INFO] 05-05-2025 00:53:38 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 1 
+[INFO] 05-05-2025 00:53:38 [main] [Pages.P03_CartPage.clickOnContinueShoppingButton(P03_CartPage.java:104)] - Redirect To CheckOutPage Your Information 
+[INFO] 05-05-2025 00:53:38 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 2 
+[INFO] 05-05-2025 00:53:38 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 2 
+[INFO] 05-05-2025 00:53:38 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 2 
+[INFO] 05-05-2025 00:53:39 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 05-05-2025 00:53:40 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 05-05-2025 00:53:40 [main] [Pages.P05_OverviewPage.getTotal(P05_OverviewPage.java:32)] - Actual Total Price: 43.18 
+[INFO] 05-05-2025 00:53:40 [main] [Pages.P05_OverviewPage.calculateTotalPrice(P05_OverviewPage.java:39)] - calculated Total Price: 43.18 
+[INFO] 05-05-2025 00:53:40 [main] [Pages.P06_FinishPage.isVisibilityThanksMessage(P06_FinishPage.java:19)] - Thanks Message is: THANK YOU FOR YOUR ORDER 
+[INFO] 05-05-2025 00:53:40 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :E2eScenario_VerifyContinueShopping Passed  
+[INFO] 05-05-2025 00:53:40 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:53:42 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:53:42 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_inValidResetAppState Started  
+[INFO] 05-05-2025 00:53:44 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 1 
+[INFO] 05-05-2025 00:53:44 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 1 
+[INFO] 05-05-2025 00:53:45 [main] [Listeners.IInvokeMethodListeners.afterInvocation(IInvokeMethodListeners.java:22)] - Test Case :E2eScenario_inValidResetAppState Failed  
+[INFO] 05-05-2025 00:53:45 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:53:47 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:53:47 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_invalid_AddingProductFromProductPageDetails Started  
+[INFO] 05-05-2025 00:53:49 [main] [Tests.E2E.E2e_Sc.E2eScenario_invalid_AddingProductFromProductPageDetails(E2e_Sc.java:198)] - ProductName in HomePage: Sauce Labs Backpack 
+[INFO] 05-05-2025 00:53:49 [main] [Tests.E2E.E2e_Sc.E2eScenario_invalid_AddingProductFromProductPageDetails(E2e_Sc.java:200)] - ProductName in ProductDetails : Sauce Labs Backpack 
+[INFO] 05-05-2025 00:53:49 [main] [Pages.P07_ProductOfDetailsPage.getNumberOfProductsOnCartIcon(P07_ProductOfDetailsPage.java:26)] - Number of products On Cart: 1 
+[ERROR] 05-05-2025 00:54:00 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:149)] - Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(@class,'shopping_cart_badge')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\EGYPT_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59026}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59026/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 221b25e4bd51cc23838c79f746ae2f6b 
+[INFO] 05-05-2025 00:54:00 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :E2eScenario_invalid_AddingProductFromProductPageDetails Passed  
+[INFO] 05-05-2025 00:54:00 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:54:02 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:54:02 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_valid_CheckOrderWithEmptyCart Started  
+[INFO] 05-05-2025 00:54:04 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 05-05-2025 00:54:04 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 05-05-2025 00:54:04 [main] [Pages.P05_OverviewPage.getTotalPriceWithZero(P05_OverviewPage.java:54)] - Actual Total Price: 0.00 
+[INFO] 05-05-2025 00:54:04 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :E2eScenario_valid_CheckOrderWithEmptyCart Passed  
+[INFO] 05-05-2025 00:54:05 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:54:06 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:54:06 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_valid_LogoutSc Started  
+[INFO] 05-05-2025 00:54:09 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :E2eScenario_valid_LogoutSc Passed  
+[INFO] 05-05-2025 00:54:09 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:54:11 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:54:11 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :invalidCheckOutInformation_WithEmptyFNameTC Started  
+[INFO] 05-05-2025 00:54:12 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 2 
+[INFO] 05-05-2025 00:54:12 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 5 
+[INFO] 05-05-2025 00:54:13 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 05-05-2025 00:54:13 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 05-05-2025 00:54:13 [main] [Pages.P04_CheckOutPage.isDisplayedErrorMessage(P04_CheckOutPage.java:56)] - Error Message is: Error: First Name is required 
+[INFO] 05-05-2025 00:54:13 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :invalidCheckOutInformation_WithEmptyFNameTC Passed  
+[INFO] 05-05-2025 00:54:14 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:54:15 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:54:15 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :invalidCheckOutInformation_WithEmptyLNameTC Started  
+[INFO] 05-05-2025 00:54:17 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 2 
+[INFO] 05-05-2025 00:54:17 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 5 
+[INFO] 05-05-2025 00:54:17 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 05-05-2025 00:54:18 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 05-05-2025 00:54:18 [main] [Pages.P04_CheckOutPage.isDisplayedErrorMessage(P04_CheckOutPage.java:56)] - Error Message is: Error: Last Name is required 
+[INFO] 05-05-2025 00:54:18 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :invalidCheckOutInformation_WithEmptyLNameTC Passed  
+[INFO] 05-05-2025 00:54:18 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:54:20 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:54:20 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :invalidCheckOutInformation_WithEmptyPosalCodeTC Started  
+[INFO] 05-05-2025 00:54:21 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 2 
+[INFO] 05-05-2025 00:54:21 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 6 
+[INFO] 05-05-2025 00:54:22 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 05-05-2025 00:54:22 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 05-05-2025 00:54:22 [main] [Pages.P04_CheckOutPage.isDisplayedErrorMessage(P04_CheckOutPage.java:56)] - Error Message is: Error: Postal Code is required 
+[INFO] 05-05-2025 00:54:23 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :invalidCheckOutInformation_WithEmptyPosalCodeTC Passed  
+[INFO] 05-05-2025 00:54:23 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 05-05-2025 00:54:25 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 05-05-2025 00:54:25 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :valid_FullE2eScenario Started  
+[INFO] 05-05-2025 00:54:26 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 1 
+[INFO] 05-05-2025 00:54:26 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 2 
+[INFO] 05-05-2025 00:54:26 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 4 
+[INFO] 05-05-2025 00:54:26 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 3 
+[INFO] 05-05-2025 00:54:27 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 3 
+[INFO] 05-05-2025 00:54:27 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 05-05-2025 00:54:28 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 05-05-2025 00:54:28 [main] [Pages.P05_OverviewPage.calculateTotalPrice(P05_OverviewPage.java:39)] - calculated Total Price: 97.17 
+[INFO] 05-05-2025 00:54:28 [main] [Pages.P05_OverviewPage.getTotal(P05_OverviewPage.java:32)] - Actual Total Price: 97.17 
+[INFO] 05-05-2025 00:54:28 [main] [Pages.P06_FinishPage.isVisibilityThanksMessage(P06_FinishPage.java:19)] - Thanks Message is: THANK YOU FOR YOUR ORDER 
+[INFO] 05-05-2025 00:54:28 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :valid_FullE2eScenario Passed  
