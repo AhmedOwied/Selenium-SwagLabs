@@ -165,7 +165,7 @@ public class E2e_Sc {
     }
 
     @Description("Verify All buttons are Reset to 'ADD TO CART' state after Clicking On Reset App State")
-    @Test(enabled = false)
+    @Test
     public void E2eScenario_inValidResetAppState() throws IOException {
         SoftAssert softAssert = new SoftAssert();
         new P01_LoginPage(getDriver())
@@ -185,7 +185,7 @@ public class E2e_Sc {
     }
 
     @Description("Verify When User Add product From ProductPageDetails")
-    @Test(enabled = false)
+    @Test
     public void E2eScenario_invalid_AddingProductFromProductPageDetails() throws FileNotFoundException {
         //TODO::LoginSteps
         new P01_LoginPage(getDriver())
