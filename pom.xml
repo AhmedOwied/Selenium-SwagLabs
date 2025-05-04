@@ -152,8 +152,8 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--Class E2e_Sc -->
-                        <!-- <suiteXmlFile>TestRunner/E2eScenarios.xml</suiteXmlFile>-->
-                        <suiteXmlFile>TestRunner/E2eScenarios_parallelExecution.xml</suiteXmlFile>
+                        <suiteXmlFile>TestRunner/E2eScenarios.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>TestRunner/E2eScenarios_parallelExecution.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -78,7 +78,8 @@ public class E2e_Sc {
                 .enterPostalCode(postalCode)
                 .clickOnContinue();
 
-        softAssert.assertEquals(new P05_OverviewPage(getDriver()).getTotal(), new P05_OverviewPage(getDriver()).calculateTotalPrice());
+        softAssert.assertTrue(new P05_OverviewPage(getDriver()).comparingTotalPrice());
+        //softAssert.assertEquals(new P05_OverviewPage(getDriver()).getTotal(), new P05_OverviewPage(getDriver()).calculateTotalPrice());
 
         new P05_OverviewPage(getDriver()).clickOnFinishButton();
         softAssert.assertTrue(new P06_FinishPage(getDriver()).isVisibilityThanksMessage());
