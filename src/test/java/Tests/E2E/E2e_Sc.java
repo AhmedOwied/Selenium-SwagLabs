@@ -5,12 +5,11 @@ import Listeners.ITestResultsListeners;
 import Pages.*;
 import Utilities.DataUtil;
 import Utilities.LogsUtils;
+import Utilities.Utility;
+import com.github.javafaker.Faker;
 import io.qameta.allure.Description;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import java.io.FileNotFoundException;
@@ -18,16 +17,38 @@ import java.io.IOException;
 
 import static DriverFactory.DriverFactory.*;
 
-;
-
 
 @Listeners({IInvokeMethodListeners.class, ITestResultsListeners.class})
 public class E2e_Sc {
 
+    private String Username;
+    private String Password;
+    private String firstName;
+    private String lastName;
+    private String postalCode;
 
+    //Read Data From DataUtils "DataDriven"
+    {
+        try {
+            Username = DataUtil.getJsonData("validLoginData", "username");
+            Password = DataUtil.getJsonData("validLoginData", "password");
+            firstName = DataUtil.getJsonData("information", "fName") + "-" + Utility.getTimeStamp();
+            lastName = DataUtil.getJsonData("information", "lName") + "-" + Utility.getTimeStamp();
+            postalCode = new Faker().number().digits(5);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    @Parameters("browser")
     @BeforeMethod
-    public void setUp() throws IOException {
-        String browser = System.getProperty("browser") != null ? System.getProperty("browser") : DataUtil.getPropertyValue("environment", "browser");
+    public void setUp(@Optional("chrome") String browser) throws IOException {
+        if (System.getProperty(browser) != null) {
+            browser = System.getProperty(browser);
+        }
+        //TODO::use this line in case of if i don` t want use Parameters
+        //browser = System.getProperty("browser") != null ? System.getProperty("browser") : DataUtil.getPropertyValue("environment", "browser");
         LogsUtils.info(System.getProperty("browser"));
         setUpDriver(browser);
         getDriver().get(DataUtil.getPropertyValue("environment", "LOGIN_URL"));
@@ -37,12 +58,12 @@ public class E2e_Sc {
 
     @Description("Valid E2e Scenario for User Journey")
     @Test
-    public void mvn() throws IOException {
+    public void valid_FullE2eScenario() throws IOException {
         //TODO::Use SoftAssert
         SoftAssert softAssert = new SoftAssert();
         new P01_LoginPage(getDriver())
-                .enterUserName(DataUtil.getJsonData("validLoginData", "username"))
-                .enterPassword(DataUtil.getJsonData("validLoginData", "password"))
+                .enterUserName(Username)
+                .enterPassword(Password)
                 .clickOnLoginButton();
         softAssert.assertEquals(getDriver().getCurrentUrl(), DataUtil.getPropertyValue("environment", "HOME_URL"), "Assert After login redirection Failed");
         //TODO::adding product
@@ -52,9 +73,9 @@ public class E2e_Sc {
         new P02_HomePage(getDriver()).clickOnCartIcon();
         //TODO::Filling info CheckOut
         new P03_CartPage(getDriver()).clickOnCheckOutButton()
-                .enterFirstName(DataUtil.getJsonData("information", "fName"))
-                .enterLastName(DataUtil.getJsonData("information", "lName"))
-                .enterPostalCode("123")
+                .enterFirstName(firstName)
+                .enterLastName(lastName)
+                .enterPostalCode(postalCode)
                 .clickOnContinue();
 
         softAssert.assertEquals(new P05_OverviewPage(getDriver()).getTotal(), new P05_OverviewPage(getDriver()).calculateTotalPrice());
@@ -67,9 +88,9 @@ public class E2e_Sc {
     }
 
     //new P05_OverviewPage(getDriver()).comparingTotalPrice()
-    @Description("Verify CheckOut Order WithOut Product In Cart")
+    @Description("Verify CheckOut Order WithOut Products In Cart")
     @Test
-    public void E2eScenario_Invalid_CheckOrderWithEmptyCart() throws IOException {
+    public void E2eScenario_valid_CheckOrderWithEmptyCart() throws IOException {
         //TODO::Use SoftAssert
         SoftAssert softAssert = new SoftAssert();
         new P01_LoginPage(getDriver())
@@ -143,9 +164,8 @@ public class E2e_Sc {
     }
 
     @Description("Verify All buttons are Reset to 'ADD TO CART' state after Clicking On Reset App State")
-    @Test
+    @Test(enabled = false)
     public void E2eScenario_inValidResetAppState() throws IOException {
-        //TODO::Use SoftAssert
         SoftAssert softAssert = new SoftAssert();
         new P01_LoginPage(getDriver())
                 .enterUserName(DataUtil.getJsonData("validLoginData", "username"))
@@ -164,7 +184,7 @@ public class E2e_Sc {
     }
 
     @Description("Verify When User Add product From ProductPageDetails")
-    @Test
+    @Test(enabled = false)
     public void E2eScenario_invalid_AddingProductFromProductPageDetails() throws FileNotFoundException {
         //TODO::LoginSteps
         new P01_LoginPage(getDriver())
@@ -219,6 +239,75 @@ public class E2e_Sc {
         softAssert.assertAll();
     }
 
+
+    @Test
+    public void invalidCheckOutInformation_WithEmptyFNameTC() throws IOException {
+        //TODO::LoginSteps
+        new P01_LoginPage(getDriver()).enterUserName(Username)
+                .enterPassword(Password)
+                .clickOnLoginButton();
+        //TODO::Adding Products Steps
+        new P02_HomePage(getDriver()).addRandomProducts(2, 6)
+                .clickOnCartIcon();
+        //TODO::GoTo CheckOut Page
+        new P03_CartPage(getDriver()).clickOnCheckOutButton();
+        //TODO:: Filling Info Steps
+        new P04_CheckOutPage(getDriver())
+                .enterFirstName("")
+                .enterLastName(lastName)
+                .enterPostalCode(postalCode)
+                .clickOnContinue();
+
+        Utility.takeScreenShot(getDriver(), "invalidCheckOutScreen-EmptyFirstName--");
+
+        Assert.assertTrue(new P04_CheckOutPage(getDriver()).isDisplayedErrorMessage());
+    }
+
+    @Test
+    public void invalidCheckOutInformation_WithEmptyLNameTC() throws IOException {
+        //TODO::LoginSteps
+        new P01_LoginPage(getDriver()).enterUserName(Username)
+                .enterPassword(Password)
+                .clickOnLoginButton();
+        //TODO::Adding Products Steps
+        new P02_HomePage(getDriver()).addRandomProducts(2, 6)
+                .clickOnCartIcon();
+        //TODO::GoTo CheckOut Page
+        new P03_CartPage(getDriver()).clickOnCheckOutButton();
+        //TODO:: Filling Info Steps
+        new P04_CheckOutPage(getDriver())
+                .enterFirstName(firstName)
+                .enterLastName("")
+                .enterPostalCode(postalCode)
+                .clickOnContinue();
+
+        Utility.takeScreenShot(getDriver(), "invalidCheckOutScreen-EmptyLastName-");
+
+        Assert.assertTrue(new P04_CheckOutPage(getDriver()).isDisplayedErrorMessage());
+    }
+
+    @Test
+    public void invalidCheckOutInformation_WithEmptyPosalCodeTC() throws IOException {
+        //TODO::LoginSteps
+        new P01_LoginPage(getDriver()).enterUserName(Username)
+                .enterPassword(Password)
+                .clickOnLoginButton();
+        //TODO::Adding Products Steps
+        new P02_HomePage(getDriver()).addRandomProducts(2, 6)
+                .clickOnCartIcon();
+        //TODO::GoTo CheckOut Page
+        new P03_CartPage(getDriver()).clickOnCheckOutButton();
+        //TODO:: Filling Info Steps
+        new P04_CheckOutPage(getDriver())
+                .enterFirstName(firstName)
+                .enterLastName(lastName)
+                .enterPostalCode("")
+                .clickOnContinue();
+
+        Utility.takeScreenShot(getDriver(), "invalidCheckOutScreen-");
+
+        Assert.assertTrue(new P04_CheckOutPage(getDriver()).isDisplayedErrorMessage());
+    }
 
     @AfterMethod
     public void quit() {

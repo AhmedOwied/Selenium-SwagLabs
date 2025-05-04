@@ -21,14 +21,15 @@ public class DriverFactory {
                 option1.addArguments("--incognito");
                 driverThreadLocal.set(new ChromeDriver(option1));
                 break;
-            case "firefox":
-                driverThreadLocal.set(new FirefoxDriver());
-                break;
-            default:
+           
+            case "edge":
                 EdgeOptions option2 = new EdgeOptions();
                 option2.addArguments("--start-maximized");
                 option2.setPageLoadStrategy(PageLoadStrategy.NORMAL); //Search? in Document
                 driverThreadLocal.set(new EdgeDriver(option2));
+                break;
+            default:
+                driverThreadLocal.set(new FirefoxDriver());
         }
     }
 
