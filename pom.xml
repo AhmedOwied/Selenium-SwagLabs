@@ -131,6 +131,20 @@
             <version>${allureApi.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.22.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.20.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -150,6 +164,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
+                    <!-- <test>Runner.RunnerTest</test> -->
                     <suiteXmlFiles>
                         <!--Class E2e_Sc -->
                         <suiteXmlFile>TestRunner/E2eScenarios.xml</suiteXmlFile>
