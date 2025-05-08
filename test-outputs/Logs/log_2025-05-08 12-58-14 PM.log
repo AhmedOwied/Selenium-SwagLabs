@@ -1,0 +1,42 @@
+[INFO] 08-05-2025 12:58:14 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 08-05-2025 12:58:19 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 08-05-2025 12:58:19 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_Valid_RemoveProductFromCartSc Started  
+[INFO] 08-05-2025 12:58:20 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 3 
+[INFO] 08-05-2025 12:58:23 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 4 
+[INFO] 08-05-2025 12:58:24 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 2 
+[INFO] 08-05-2025 12:58:24 [main] [Tests.E2E.E2e_Sc.E2eScenario_Valid_RemoveProductFromCartSc(E2e_Sc.java:134)] - numberOfCartIconBeforeClickOnRemoveItem: 2 
+[INFO] 08-05-2025 12:58:25 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 1 
+[INFO] 08-05-2025 12:58:25 [main] [Tests.E2E.E2e_Sc.E2eScenario_Valid_RemoveProductFromCartSc(E2e_Sc.java:139)] - numberOfCartIconAfterClickOnRemoveItem: 1 
+[INFO] 08-05-2025 12:58:25 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :E2eScenario_Valid_RemoveProductFromCartSc Passed  
+[INFO] 08-05-2025 12:58:25 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 08-05-2025 12:58:28 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 08-05-2025 12:58:28 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_VerifyContinueShopping Started  
+[INFO] 08-05-2025 12:58:31 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 1 
+[INFO] 08-05-2025 12:58:31 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 1 
+[INFO] 08-05-2025 12:58:32 [main] [Pages.P03_CartPage.clickOnContinueShoppingButton(P03_CartPage.java:104)] - Redirect To CheckOutPage Your Information 
+[INFO] 08-05-2025 12:58:32 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 1 
+[ERROR] 08-05-2025 12:58:43 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:149)] - Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(@class,'shopping_cart_badge')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.116, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\EGYPT_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55402/devtoo..., se:cdpVersion: 135.0.7049.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82b78ad6f5df9bdccb335f1d227175ff 
+[INFO] 08-05-2025 12:58:43 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 0 
+[INFO] 08-05-2025 12:58:43 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 08-05-2025 12:58:44 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 08-05-2025 12:58:44 [main] [Pages.P05_OverviewPage.getTotal(P05_OverviewPage.java:32)] - Actual Total Price: 0.00 
+[INFO] 08-05-2025 12:58:45 [main] [Pages.P05_OverviewPage.calculateTotalPrice(P05_OverviewPage.java:39)] - calculated Total Price: 0.0 
+[INFO] 08-05-2025 12:58:46 [main] [Pages.P06_FinishPage.isVisibilityThanksMessage(P06_FinishPage.java:19)] - Thanks Message is: THANK YOU FOR YOUR ORDER 
+[INFO] 08-05-2025 12:58:46 [main] [Listeners.ITestResultsListeners.onTestSuccess(ITestResultsListeners.java:13)] - Test Case :E2eScenario_VerifyContinueShopping Passed  
+[INFO] 08-05-2025 12:58:46 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 08-05-2025 12:58:50 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 08-05-2025 12:58:50 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_inValidResetAppState Started  
+[INFO] 08-05-2025 12:58:51 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 1 
+[INFO] 08-05-2025 12:58:52 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 1 
+[INFO] 08-05-2025 12:58:53 [main] [Listeners.IInvokeMethodListeners.afterInvocation(IInvokeMethodListeners.java:22)] - Test Case :E2eScenario_inValidResetAppState Failed  
+[INFO] 08-05-2025 12:58:53 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:52)] - null 
+[INFO] 08-05-2025 12:58:56 [main] [Tests.E2E.E2e_Sc.setUp(E2e_Sc.java:55)] - page is redirect url successfully 
+[INFO] 08-05-2025 12:58:56 [main] [Listeners.ITestResultsListeners.onTestStart(ITestResultsListeners.java:9)] - Test Case :E2eScenario_invalid_AddingProductFromProductPageDetails Started  
+[INFO] 08-05-2025 12:58:58 [main] [Tests.E2E.E2e_Sc.E2eScenario_invalid_AddingProductFromProductPageDetails(E2e_Sc.java:198)] - ProductName in HomePage: Sauce Labs Backpack 
+[INFO] 08-05-2025 12:58:59 [main] [Tests.E2E.E2e_Sc.E2eScenario_invalid_AddingProductFromProductPageDetails(E2e_Sc.java:200)] - ProductName in ProductDetails : Sauce Labs Backpack 
+[INFO] 08-05-2025 12:58:59 [main] [Pages.P07_ProductOfDetailsPage.getNumberOfProductsOnCartIcon(P07_ProductOfDetailsPage.java:26)] - Number of products On Cart: 1 
