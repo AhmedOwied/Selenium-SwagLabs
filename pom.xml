@@ -164,7 +164,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <!-- <test>Runner.RunnerTest</test> -->
+                    <test>Runner.RunnerTest</test>
                     <suiteXmlFiles>
                         <!--Class E2e_Sc -->
                         <!-- <suiteXmlFile>TestRunner/E2eScenarios.xml</suiteXmlFile>-->
