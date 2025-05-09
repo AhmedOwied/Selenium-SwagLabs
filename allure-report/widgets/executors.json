@@ -1,1 +1,1 @@
-[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":3,"buildName":"SwagLabs_Automation_Locally #3","buildUrl":"http://localhost:8080/job/SwagLabs_Automation_Locally/3/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/SwagLabs_Automation_Locally/3/allure"}]
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":13,"buildName":"SwagLabsProject #13","buildUrl":"http://localhost:8080/job/SwagLabsProject/13/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/SwagLabsProject/13/allure"}]

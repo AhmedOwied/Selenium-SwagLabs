@@ -19,6 +19,7 @@ public class DriverFactory {
                 option1.addArguments("--start-maximized");
                 option1.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 option1.addArguments("--incognito");
+                option1.addArguments("--headless=new");
                 driverThreadLocal.set(new ChromeDriver(option1));
                 break;
 
@@ -26,7 +27,9 @@ public class DriverFactory {
                 EdgeOptions option2 = new EdgeOptions();
                 option2.addArguments("--start-maximized");
                 option2.setPageLoadStrategy(PageLoadStrategy.NORMAL); //Search? in Document
-                option2.addArguments("--remote-allow-origins=*");
+                //option2.addArguments("--remote-allow-origins=*");
+                option2.addArguments("--headless=new");
+                option2.setBinary("C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe");
                 driverThreadLocal.set(new EdgeDriver(option2));
                 break;
             default:

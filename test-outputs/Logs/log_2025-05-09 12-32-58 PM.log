@@ -1,0 +1,32 @@
+[INFO] 09-05-2025 12:32:58 [main] [Pages.P02_HomePage.addAllProductsToCart(P02_HomePage.java:47)] - Number of Products:6 
+[INFO] 09-05-2025 12:32:59 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 6 
+[INFO] 09-05-2025 12:32:59 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 6 
+[INFO] 09-05-2025 12:32:59 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 09-05-2025 12:33:00 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 09-05-2025 12:33:04 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 09-05-2025 12:33:05 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 09-05-2025 12:33:05 [main] [Pages.P05_OverviewPage.getTotalPriceWithZero(P05_OverviewPage.java:54)] - Actual Total Price: 0.00 
+[INFO] 09-05-2025 12:33:07 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 4 
+[INFO] 09-05-2025 12:33:08 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 5 
+[INFO] 09-05-2025 12:33:08 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 2 
+[INFO] 09-05-2025 12:33:08 [main] [StepDefinitions.SD03_RemoveProductFromCart_Steps.iNavigateToCartPage(SD03_RemoveProductFromCart_Steps.java:43)] - numberOfCartIconBeforeClickOnRemoveItem: 2 
+[INFO] 09-05-2025 12:33:08 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 1 
+[INFO] 09-05-2025 12:33:08 [main] [StepDefinitions.SD03_RemoveProductFromCart_Steps.iRemoveProductFromTheCart(SD03_RemoveProductFromCart_Steps.java:50)] - numberOfCartIconAfterClickOnRemoveItem: 1 
+[INFO] 09-05-2025 12:33:15 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 1 
+[INFO] 09-05-2025 12:33:15 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 1 
+[INFO] 09-05-2025 12:33:19 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:146)] - Number of products On Cart: 1 
+[INFO] 09-05-2025 12:33:19 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 1 
+[INFO] 09-05-2025 12:33:19 [main] [Pages.P03_CartPage.clickOnContinueShoppingButton(P03_CartPage.java:104)] - Redirect To CheckOutPage Your Information 
+[INFO] 09-05-2025 12:33:19 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:158)] - randomNumber 1 
+[ERROR] 09-05-2025 12:33:30 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:149)] - Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(@class,'shopping_cart_badge')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\EGYPT_~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49927/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c19f40cd37de8e8d84ec0fdac6a61c4f 
+[INFO] 09-05-2025 12:33:30 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:135)] - Number Of Selected Products: 0 
+[INFO] 09-05-2025 12:33:30 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 09-05-2025 12:33:31 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 09-05-2025 12:33:31 [main] [Pages.P05_OverviewPage.getTotal(P05_OverviewPage.java:32)] - Actual Total Price: 0.00 
+[INFO] 09-05-2025 12:33:31 [main] [Pages.P05_OverviewPage.calculateTotalPrice(P05_OverviewPage.java:39)] - calculated Total Price: 0.0 
+[INFO] 09-05-2025 12:33:31 [main] [Pages.P06_FinishPage.isVisibilityThanksMessage(P06_FinishPage.java:19)] - Thanks Message is: THANK YOU FOR YOUR ORDER 

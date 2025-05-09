@@ -164,11 +164,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <test>Runner.RunnerTest</test>
                     <suiteXmlFiles>
                         <!--Class E2e_Sc -->
                         <!-- <suiteXmlFile>TestRunner/E2eScenarios.xml</suiteXmlFile>-->
-                        <suiteXmlFile>TestRunner/E2eScenarios_parallelExecution.xml</suiteXmlFile>
+                        <!-- <suiteXmlFile>TestRunner/E2eScenarios_parallelExecution.xml</suiteXmlFile>-->
+                        <suiteXmlFile>TestRunner/Cucumber.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
