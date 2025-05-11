@@ -17,14 +17,12 @@ Feature: End-to-End Purchase Flow
     When  The user proceeds to checkout and enters valid personal information
     Then  The total price on the overview page should be "0.00"
 
-
   Scenario: Successfully remove a product from cart after adding random products
     Given I am logged in with valid credentials
     When  I add between 2 and 5 random products to the cart
     And   I navigate to the cart page
     And   I remove one product from the cart
     Then  The cart count should decrease by one
-
 
   Scenario: Successful logout after adding a product to the cart
     Given I am on the login page
@@ -33,7 +31,6 @@ Feature: End-to-End Purchase Flow
     And I open the side menu
     And I click on the logout button
     Then I should be redirected back to the login page
-
 
   Scenario: Reset app state after adding a product
     Given I am on the login page
@@ -59,5 +56,15 @@ Feature: End-to-End Purchase Flow
     And enters valid checkout information
     Then the total price should be correctly calculated
     And the user finishes the purchase
-    Then a thank you message should be displayed
+    Then thank you message should be displayed
+    
+  Scenario: Verify adding product from product details page reflects correctly in cart
+    Given I am on the login page
+    When  I login with valid credentials
+    And   I view the first product details
+    Then  the product name on the product details page should match the name on the home page
+    When  I add the product to the cart from the product details page
+    Then  the cart icon on the product details page should show 1 item
+    When  I go back to the home page
+    Then  the cart icon on the home page should show 1 item
 

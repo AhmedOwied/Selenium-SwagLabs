@@ -123,6 +123,7 @@ public class P02_HomePage {
             if (!btn.getText().equalsIgnoreCase("ADD TO CART")) {
                 return false;
             }
+
         }
         return true;
     }
