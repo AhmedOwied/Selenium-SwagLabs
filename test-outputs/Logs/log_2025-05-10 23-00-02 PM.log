@@ -1,0 +1,29 @@
+[INFO] 10-05-2025 23:00:02 [main] [Pages.P02_HomePage.addAllProductsToCart(P02_HomePage.java:47)] - Number of Products:6 
+[INFO] 10-05-2025 23:00:03 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:147)] - Number of products On Cart: 6 
+[INFO] 10-05-2025 23:00:03 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:136)] - Number Of Selected Products: 6 
+[INFO] 10-05-2025 23:00:03 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 10-05-2025 23:00:04 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 10-05-2025 23:00:09 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 10-05-2025 23:00:09 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 10-05-2025 23:00:09 [main] [Pages.P05_OverviewPage.getTotalPriceWithZero(P05_OverviewPage.java:54)] - Actual Total Price: 0.00 
+[INFO] 10-05-2025 23:00:13 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:159)] - randomNumber 1 
+[INFO] 10-05-2025 23:00:13 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:159)] - randomNumber 5 
+[INFO] 10-05-2025 23:00:13 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 2 
+[INFO] 10-05-2025 23:00:13 [main] [StepDefinitions.SD03_E2E_RemoveProductFromCartSteps.iNavigateToCartPage(SD03_E2E_RemoveProductFromCartSteps.java:43)] - numberOfCartIconBeforeClickOnRemoveItem: 2 
+[INFO] 10-05-2025 23:00:13 [main] [Pages.P03_CartPage.getNumberOfProductsOnCartIconInCartPage(P03_CartPage.java:53)] - Number of products On Cart: 1 
+[INFO] 10-05-2025 23:00:13 [main] [StepDefinitions.SD03_E2E_RemoveProductFromCartSteps.iRemoveProductFromTheCart(SD03_E2E_RemoveProductFromCartSteps.java:50)] - numberOfCartIconAfterClickOnRemoveItem: 1 
+[INFO] 10-05-2025 23:00:21 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:147)] - Number of products On Cart: 1 
+[INFO] 10-05-2025 23:00:21 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:136)] - Number Of Selected Products: 1 
+[INFO] 10-05-2025 23:00:25 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:147)] - Number of products On Cart: 1 
+[INFO] 10-05-2025 23:00:25 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:136)] - Number Of Selected Products: 1 
+[INFO] 10-05-2025 23:00:25 [main] [Pages.P03_CartPage.clickOnContinueShoppingButton(P03_CartPage.java:104)] - Redirect To CheckOutPage Your Information 
+[INFO] 10-05-2025 23:00:25 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:159)] - randomNumber 2 
+[INFO] 10-05-2025 23:00:25 [main] [Pages.P02_HomePage.getNumberOfProductsOnCartIcon(P02_HomePage.java:147)] - Number of products On Cart: 2 
+[INFO] 10-05-2025 23:00:25 [main] [Pages.P02_HomePage.getNumberOfSelectedProducts(P02_HomePage.java:136)] - Number Of Selected Products: 2 
+[INFO] 10-05-2025 23:00:26 [main] [Pages.P03_CartPage.clickOnCheckOutButton(P03_CartPage.java:98)] - Redirect To CheckOutPage Your Information 
+[INFO] 10-05-2025 23:00:26 [main] [Pages.P04_CheckOutPage.clickOnContinue(P04_CheckOutPage.java:51)] - Redirect To OverViewPage Successfully 
+[INFO] 10-05-2025 23:00:26 [main] [Pages.P05_OverviewPage.getTotal(P05_OverviewPage.java:32)] - Actual Total Price: 43.18 
+[INFO] 10-05-2025 23:00:26 [main] [Pages.P05_OverviewPage.calculateTotalPrice(P05_OverviewPage.java:39)] - calculated Total Price: 43.18 
+[INFO] 10-05-2025 23:00:27 [main] [Pages.P06_FinishPage.isVisibilityThanksMessage(P06_FinishPage.java:19)] - Thanks Message is: THANK YOU FOR YOUR ORDER 
+[INFO] 10-05-2025 23:00:30 [main] [StepDefinitions.SD07_E2E_AddProductFromDetailsSteps.i_view_the_first_product_details(SD07_E2E_AddProductFromDetailsSteps.java:28)] - ProductName in HomePage: Sauce Labs Backpack 
+[INFO] 10-05-2025 23:00:30 [main] [StepDefinitions.SD07_E2E_AddProductFromDetailsSteps.i_view_the_first_product_details(SD07_E2E_AddProductFromDetailsSteps.java:30)] - ProductName in ProductDetails: Sauce Labs Backpack 
